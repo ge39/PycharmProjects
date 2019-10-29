@@ -5,8 +5,8 @@ print(frase[0:21])# do inicio até o caracter n
 print(frase[:6])# do inicio até a posicao 6, index da string
 print(frase[15:])# do index 15 até o final da string
 print(frase[9:21:2])# do index 9 ao 21, pulando de dois em 2
-print(frase[9::3])#3do index 9 até o index 21, pulando de 3 em 3 caracteres
-
+print(frase[9::3])#do index 9 até o index 21, pulando de 3 em 3 caracteres
+print(frase[::2])
 #Análise
 
 #len
