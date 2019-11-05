@@ -11,5 +11,5 @@ m = num // 1000 % 10
 
 print('Unidade {}'.format(u))
 print('Dezena {}'.format(d))
-print('Centena {} '. format(c))
+print('Centena {} '.format(c))
 print('Milhar {}'.format(m))
