@@ -9,7 +9,7 @@ escolhido = choice(lista)
 
 numero = int(input('digite um numero :'))
 if numero == escolhido:
-    print('Voce acertou, o numero escolhido foi {}'.format(escolhido))
+    print('Parabens, o numero escolhido foi {}'.format(escolhido))
 else:
     print('voce errou, o numero escolhido foi {}'.format(escolhido))
 
