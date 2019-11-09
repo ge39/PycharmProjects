@@ -2,5 +2,5 @@
 
 num = int(input('digite um numero :'))
 resultado = num % 2
-
-print('esse número é par' if resultado == 0 else 'esse numero é impar')
+# % = resto da divsao
+print('o número {} é par'.format(num) if resultado == 0 else 'o numero {} é impar '.format(num))
