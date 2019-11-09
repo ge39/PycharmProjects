@@ -6,6 +6,7 @@ from random import choice
 km = (20, 40, 60, 80, 90, 100, 120, 150, 180)
 speed = choice(km)
 limite = 80
+
 if speed <= 80:
     print('dentro do limite de velocidade {} km.'.format(speed))
 else:
