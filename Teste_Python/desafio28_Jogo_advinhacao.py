@@ -3,16 +3,17 @@
 #qual foi o numero escolhido pelo computador.
 #o programa deverá escrever na tela se o usuário venceu ou perdeu
 
-from random import choice
-lista = (0, 1, 2, 3, 4, 5)
-escolhido = choice(lista)
+from random import randint
+from time import sleep
+computador = randint(0, 5)
 
-numero = int(input('digite um numero :'))
+jogador = int(input('digite um numero :'))
 print('Processando....')
-if numero == escolhido:
-    print('Parabens, o numero escolhido foi {}'.format(escolhido))
+sleep(3)
+if jogador == computador:
+    print('Parabens, o numero escolhido foi {}'.format(computador))
 else:
-    print('voce errou, o numero escolhido foi {}'.format(escolhido))
+    print('voce errou, o numero escolhido foi {}'.format(computador))
 
 
 
