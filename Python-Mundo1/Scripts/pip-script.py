@@ -1,4 +1,4 @@
-#!C:\Users\Jeremias\Desktop\Teste_Python\Scripts\python.exe
+#!C:\Users\Jeremias\Desktop\Python-Mundo1\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'pip==19.0.3','console_scripts','pip'
 __requires__ = 'pip==19.0.3'
 import re
