@@ -2,7 +2,7 @@
 # mostrando na tela uma mensagem
 
 # - o primeiro valor é maior
-# -o segundo valor é maior
+# - o segundo valor é maior
 # nao existe valor maior, os dois sao iguais
 
 num1 = int(input('Digite o primeiro numero :'))
