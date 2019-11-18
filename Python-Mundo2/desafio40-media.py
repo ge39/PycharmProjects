@@ -7,3 +7,6 @@
 #recuperação
 #média 7.0 ou superior
 #aprovado
+
+nota1 = float(input('Primeira nota'))
+nota2 = float(input('Segunda nota'))
