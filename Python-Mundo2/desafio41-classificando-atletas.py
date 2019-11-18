@@ -6,3 +6,5 @@
 #-até 19 anos: junior
 #-até 20 anos: senior
 #-acima: master
+
+ano = int(input('Ano que nasceu'))
