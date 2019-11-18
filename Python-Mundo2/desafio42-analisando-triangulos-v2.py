@@ -3,3 +3,4 @@
 #equilátero: todos os lados iguais
 #isoceles: dois lados iguais
 #escaleno: todos os lados diferentes
+
