@@ -16,6 +16,6 @@ if result < 5:
 elif result == 5 or result <= 6.9:
     print('Sua média é \033[32m{}\033[m , Voce está de \033[32mrecuperação\033[m'.format(result))
 else:
-    print('\033[32mAprovado - \033[m' * 5, sep='-',end ='')
+    print('\033[32mAprovado - \033[m' * 5, sep='-', end='')
     print('\033[32mAprovado\033[m')
     print('Sua média é {}, Voce está aprovado'.format(result))
