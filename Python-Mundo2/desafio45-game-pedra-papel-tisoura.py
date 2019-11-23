@@ -24,8 +24,8 @@ if computador == 0:#PEDRA
         print('VOCÊ GANHOU!!!')
     elif jogador == 2:
         print('VOCÊ PERDEU !!!')
-else:
-    print('JOGADA INVÁLIDA!!!')
+    else:
+        print('JOGADA INVÁLIDA 1!!!')
 if computador == 1:  #PAPEL
     if jogador == 0:
         print('VOCÊ PERDEU !!!')
@@ -33,8 +33,8 @@ if computador == 1:  #PAPEL
         print('EMPATE')
     elif jogador == 2:
         print('VOCÊ GANHOU !!!')
-else:
-    print('JOGADA INVALIDA')
+    else:
+        print('JOGADA INVALIDA 2!!!')
 if computador == 2:#TESOURA
     if jogador == 0:
         print('VOCÊ GANHOU !!!')
@@ -42,6 +42,6 @@ if computador == 2:#TESOURA
         print('VOCÊ PERDEU !!!')
     elif jogador == 2:
         print('EMPATE')
-else:
-    print('JOGADA INVÁLIDA!!!')
+    else:
+        print('JOGADA INVÁLIDA 3!!!')
 
