@@ -17,11 +17,12 @@ print('O computador jogou {}'.format(itens[computador]))
 print('O jogador jogou {}'.format(itens[jogador]))
 print('\033[32m-=\033[m'*20)
 
-if computador == 0:#PEDRA
+if computador == 0:#  PEDRA
     if jogador == 0:
         print('EMPATE')
     elif jogador == 1:
         print('VOCÊ GANHOU!!!')
+        ponto = int(1)
     elif jogador == 2:
         print('VOCÊ PERDEU !!!')
     else:
@@ -33,11 +34,13 @@ if computador == 1:  #PAPEL
         print('EMPATE')
     elif jogador == 2:
         print('VOCÊ GANHOU !!!')
+        ponto = 1
     else:
         print('JOGADA INVALIDA 2!!!')
-if computador == 2:#TESOURA
+if computador == 2:#  TESOURA
     if jogador == 0:
         print('VOCÊ GANHOU !!!')
+        ponto = 1
     elif jogador == 1:
         print('VOCÊ PERDEU !!!')
     elif jogador == 2:
@@ -45,3 +48,4 @@ if computador == 2:#TESOURA
     else:
         print('JOGADA INVÁLIDA 3!!!')
 
+    print('Pontos', ponto)
