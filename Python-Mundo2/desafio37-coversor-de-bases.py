@@ -20,4 +20,4 @@ elif opcao == 2:
 elif opcao == 3:
     print('{} convertido para HEXADECIMAL é igual a \033[34m{}\033[m'.format(num, hex(num)))
 else:
-    print('Formato incorreto')
+    print('Opção inválida')
