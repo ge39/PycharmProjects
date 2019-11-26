@@ -1,16 +1,23 @@
-#escreva um programa que leia um numero inteiro qualquer e peça para o usuario
-#escolhar qual será a base de conversao:
+#  escreva um programa que leia um numero inteiro qualquer e peça para o usuario
+#  escolher qual será a base de conversao:
 
 # 1-para binario
 # 2-para octal
 # 3-para hexadecimal
 
 num = int(input('Digite um numero :'))
-base = str(input('Escolha uma base,\033[33moctal\033[m,\033[34mbinario\033[m,\033[31mhexadecimal\033[m :')).upper().strip()
-
-if base == 'HEXADECIMAL':
-    print(base)
-elif base == 'BINARIO':
-    print(base)
+print('\033[33mEscolha uma das bases para conversão\033[m:'
+'''
+[1] Binario
+[2] Octal
+[3] Hexadecimal
+''')
+opcao = int(input('Sua opção :'))
+if opcao == 1:
+    print('{} convertido para BINÁRIO é igual a \033[34m{}\033[m'.format(num, bin(num)))
+elif opcao == 2:
+    print('{} convertido para OCTAL é igual a \033[34m{}\033[m'.format(num, oct(num)))
+elif opcao == 3:
+    print('{} convertido para HEXADECIMAL é igual a \033[34m{}\033[m'.format(num, hex(num)))
 else:
-    print(base)
+    print('Formato incorreto')
