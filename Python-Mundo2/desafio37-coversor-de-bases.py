@@ -21,4 +21,5 @@ elif opcao == 3:
     print('{} convertido para HEXADECIMAL é igual a \033[34m{}\033[m'.format(num, hex(num)[2:]))
 else:
     print('Opção inválida')
-#[2:] fatiamento de string, exibe o resultado a partir da posição 2 até o final
+
+#  [2:] fatiamento de string, exibe o resultado a partir da posição 2 até o final
