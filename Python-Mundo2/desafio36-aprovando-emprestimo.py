@@ -4,7 +4,7 @@
 #calcule o valor da pretação mensal
 #sabendo que ela não pode exceder 30% do salário do ou então o emprestimo será negado.
 
-valor_im = float(input('Informe o valor do imóvel: R$'))
+valor_im = float(input('Qual o valor casa ?: R$'))
 salario = float(input('Informe seu salario R$:'))
 nparcelas = int(input('Quantas parcelas :'))
 
@@ -19,5 +19,5 @@ if vparcelas <= scomprometido:
     print('\033[34mCrédito Aprovado\033[m - ')
 else:
     print('Valor da mensalidade R$ {:.2f}'.format(vparcelas))
-    print('Seu sálario de R$ {:.2f} é inferior ao valor das parcelas'.format(scomprometido))
+    print('Seu sálario de R$ {:.2f} e o valor comprometido de R$ {:.2f} é inferior ao valor das parcelas'.format(salario, scomprometido))
     print('\033[31mCrédito Reprovado\033[m - ' * 5)
