@@ -6,7 +6,7 @@
 # 3- em até 2 vezes no cartao: preço normal
 # 4- 3 vezes ou mais no cartao: 20% de juros
 
-print('\033[31mForma de pagamento\033[m')
+print('{#^40}\033[31mForma de pagamento\033[m')
 print('\033[34m\n'
       '    1 - DINHEIRO / CHEQUE\n'
       '    2 - CARTÃO DÉBTO\n'
@@ -44,4 +44,4 @@ elif pagto == 4:
     print('Valor da compra R$ {:.2f}'.format(valor))
     print('Total a pagar: \033[31mJuros de 20% - R$ {:.2f}\033[m'.format(juros))
 else:
-    print('Forma de pagamento \033[31m{}\033[m - inesistente'.format(pagto))
+    print('\033[31mForma de pagamento usada {} - inesistente'.format(pagto))
