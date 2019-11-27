@@ -14,3 +14,4 @@ elif num1 < num2:
     print('\033[32mO Primeiro numero é menor que o segundo numero\033[m')
 else:
     print('\033[34mOs dois numeros são iguais\033[m')
+
