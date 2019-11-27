@@ -11,8 +11,6 @@ ano = int(input('Qual ano que voce nasceu? :'))
 ano_atual = date.today().year
 idade = (ano_atual -ano)
 print('Voce tem {} anos  em {}'.format(idade, ano_atual))
-
-
 print('\033[33mAlistamento para nascidos no ano de {}\033[m'.format(ano_atual))
 
 if idade == 18:
