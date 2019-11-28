@@ -1,4 +1,4 @@
-# estrutura de repetição ou iteração
+# estrutura de repetição, laço ou iteração
 
 i = int(input('\033[34mInicio :'))
 f = int(input('Fim :'))
