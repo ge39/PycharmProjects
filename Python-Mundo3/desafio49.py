@@ -3,4 +3,4 @@
 
 num = int(input('Digite a tabuada :'))
 for c in range(1, 11):
-    print(num, 'x', c, '= {}'.format(c * num))
+    print('{} x {:2} = {}'.format(num, c, num*c))
