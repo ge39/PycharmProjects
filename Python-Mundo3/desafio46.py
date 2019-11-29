@@ -5,5 +5,5 @@
 from time import sleep
 for cont in range(10, -1, -1):
     sleep(1)
-    print(cont, sep='-', end='-')
-print('\033[34m=FELIZ NATAL\033[m'*2)
+    print(cont, sep='-', end=' ')
+print('\n\033[34mFELIZ NATAL\033[m')
