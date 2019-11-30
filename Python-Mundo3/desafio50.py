@@ -6,6 +6,7 @@ for c in range(1, 7):
     num = int(input('Digite o {}º numero:'.format(var)))
 
     if num % 2 == 0:
-        #print(num)
+        # print(num)
         soma += num
 print('Soma dos numero pares são {}'.format(soma))
+#  linha
