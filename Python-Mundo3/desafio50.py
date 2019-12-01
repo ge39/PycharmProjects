@@ -4,6 +4,5 @@ for c in range(1, 7):
     var = c
     num = int(input('Digite o {}º numero:'.format(var)))
 soma = 0
-for n1 in range(0, 7, 2):
-    soma += n1
+   soma = soma + n1
 print(soma)
