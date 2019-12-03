@@ -4,7 +4,7 @@
 frase = str(input('Digite uma frase')).strip().upper()
 palavras = frase.split()    #divide a frase
 junto = ''.join(palavras)   # remove os espaços entre as palavras e as une
-inverso = junto[::-1]
+inverso = junto[::-1] #  fatiamento de string
 
 '''inverso = ''
 for letra in range(len(junto) - 1, -1, -1):
