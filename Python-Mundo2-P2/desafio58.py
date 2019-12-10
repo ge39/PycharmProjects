@@ -4,3 +4,5 @@
 	só que agora o jogador vai tentar adivinhar até acertar. mostrando no final quantos
 	palpites foram necessarios para vencer
 '''
+
+import randint(0, 10)
