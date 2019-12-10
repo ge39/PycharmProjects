@@ -5,5 +5,5 @@ f = int(input('Fim :'))
 p = int(input('Passo :\033[m'))
 
 for c in range(i, f, p):
-    print(c, sep="-",end='-')
+    print(c, sep="-", end='-')
 print('Fim')
