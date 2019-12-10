@@ -5,4 +5,15 @@
 	palpites foram necessarios para vencer
 '''
 
-import randint(0, 10)
+from random import randint
+contar = 0
+computador = randint(0, 10)
+jogador = int(input('Digite o numero que pensei :'))
+
+while jogador != computador:
+    if jogador != computador:
+        jogador = int(input('Digite o numero que pensei :'))
+        contar += 1
+else:
+    print('Parabéns, eu pensei no numero {} , mas voce preciso de {} tentativa'.format(computador, contar))
+
