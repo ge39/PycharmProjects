@@ -6,7 +6,7 @@
 '''
 
 from random import randint
-contar = 0
+contar = 1
 computador = randint(0, 10)
 jogador = int(input('Digite o numero que pensei :'))
 
@@ -15,5 +15,5 @@ while jogador != computador:
         jogador = int(input('Digite o numero que pensei :'))
         contar += 1
 else:
-    print('Parabéns, eu pensei no numero {} , mas voce preciso de {} tentativa'.format(computador, contar))
+    print('Parabéns, eu pensei no numero\033[34m {}\033[m , mas, voce precisou de\033[31m {}\033[m tentativa para acertar'.format(computador, contar))
 
