@@ -6,9 +6,12 @@ desafio57
 '''
 
 sexo = str(input('Digite seu sexo :')).strip().upper()
-while  'M'!= sexo !='F' :
-    sexo = str(input('Digite Novamente o sexo :')).upper().strip()
+while 'M' != sexo != 'F':
+    sexo = str(input('Você errou, Digite novamente o sexo :')).upper().strip()
+
+if sexo == 'F':
+    F = str('Feminino')
+    print('Informação, {} para {} está correta'.format(sexo, F))
 else:
-    print ('sexo ok')
-
-
+    M = str('Masculino')
+    print('Informação {} para {} está correto'.format(sexo, M))
