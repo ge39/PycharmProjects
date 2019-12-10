@@ -33,3 +33,6 @@ while num < 5:
             print('O valor {} é maior que o valor {}'.format(num1, num2))
         else:
             print('O valor {} é maior que o valor {}'.format(num2, num1))
+    if digite == 4:
+        num1 = int(input('Digite o Primeiro numero :'))
+        num2 = int(input('Digite o Segundo numero :'))
