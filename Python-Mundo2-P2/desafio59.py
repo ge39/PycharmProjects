@@ -38,9 +38,11 @@ while num < 5:
         num2 = int(input('\033[31mDigite o Segundo numero\033[m :'))
     if digite == 5:
         print('Fim')
-if digite > 5:
-    print('Opção incorreta')
-
+        break
+    if digite > 5:
+        print('Opção incorreta')
+        num1 = int(input('\033[31mDigite o Primeiro numero\033[m :'))
+        num2 = int(input('\033[31mDigite o Segundo numero\033[m :'))
 
 
         
