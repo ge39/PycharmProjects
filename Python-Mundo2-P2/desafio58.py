@@ -6,14 +6,22 @@
 '''
 
 from random import randint
-contar = 1
+
 computador = randint(0, 10)
+acertou = False
+palpites = 1
 jogador = int(input('Digite o numero que pensei :'))
 
-while jogador != computador:
-    if jogador != computador:
+while not acertou:
+    if jogador == computador:
+        acertou = True
+        print(
+            'Parabéns, eu pensei no numero\033[34m {}\033[m , mas, voce precisou de\033[31m {}\033[m tentativa para acertar'.format(
+                computador, palpites))
+    else:
+        if jogador > computador:
+            print('o numero é menor, tente novamente')
+        else:
+            print('O numero é maior, tente novamente')
         jogador = int(input('Digite o numero que pensei :'))
-        contar += 1
-else:
-    print('Parabéns, eu pensei no numero\033[34m {}\033[m , mas, voce precisou de\033[31m {}\033[m tentativa para acertar'.format(computador, contar))
-
+        palpites += 1
