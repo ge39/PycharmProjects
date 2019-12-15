@@ -11,7 +11,7 @@ f = factorial(n)
 print('Fatorial de {} é {}'.format(n, f))
 '''
 
-n = int(input('Digite um Numero :'))
+n = int(input('Digite um Numero para descobrir seu fatorial :'))
 c = n
 f = 1
 print('\033[34mCalculando o Fatorial {}!\033[m = '.format(n), end='')
