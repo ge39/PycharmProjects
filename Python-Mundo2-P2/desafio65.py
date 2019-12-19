@@ -23,7 +23,6 @@ while continuar == 'S':
         if num > maior:
             maior = num
     continuar = str(input('Deseja continuar [S/sim] [N/não] :')).upper().strip()[0]
-
 else:
     print('\033[31mTotal de numeros {}\033[m \n\033[32mSoma dos valores {:.2f}\033[m \033[34m \ne a sua média {:.2f}\033[m\033[35m '
           '\nO maior valor foi {} e o menor valor foi {}\033[m'.format(cont, soma, media, maior, menor))
