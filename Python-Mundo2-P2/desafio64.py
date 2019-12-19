@@ -11,4 +11,4 @@ while num != 999:
         cont += 1
         soma += num
 else:
-        print('\033[34mVoce contou {} numeros e a soma deles são {}\033[m'.format(cont, soma), end='')
+        print(f'\033[34mVoce contou {cont} numeros e a soma deles são {soma}\033[m', end='')
