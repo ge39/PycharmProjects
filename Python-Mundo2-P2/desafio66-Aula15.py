@@ -11,4 +11,4 @@ while c != 999:
         soma += c
         cont += 1
 else:
-    print(f'Numeros digitados foram {cont} e a soma é {soma}')
+    print(f'Numeros digitados foram {cont} numeros e sua soma é {soma}')
