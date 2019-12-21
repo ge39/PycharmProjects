@@ -8,7 +8,7 @@ c = soma = cont = 0
 while c != 999:
     c = int(input('Digite um numero [999 para parar]:'))
     if c != 999:
-        cont += 1
         soma += c
-    else:
-        print(f'Numeros digitados foram {cont} e a soma é {soma}')
+        cont += 1
+else:
+    print(f'Numeros digitados foram {cont} e a soma é {soma}')
