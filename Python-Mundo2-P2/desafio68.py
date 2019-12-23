@@ -17,20 +17,21 @@ while continuar in 'sS':
     #  print(f'A soma de {num} e {computador} é {soma}')
 
     if soma % 2 == 0:
-        vitoria += 1
+        jogada += 1
         if acao in 'Pp':
             print(f'{soma} é par e voce Venceu ')
-            jogada += 1
+            vitoria += 1
         else:
             print(f'{soma} é par e voce Perdeu ')
+        continuar = str(input('Deseja Continuar [S] Sim e [N] Não :'))
     if soma % 2 != 0:
-        vitoria += 1
+        jogada += 1
         if acao in 'Pp':
             print(f'{soma} é impar e voce Perdeu')
         else:
             print(f' {soma} é impar e voce Venceu')
-            jogada +=1
-    continuar = str(input('Deseja Continuar [S] Sim e [N] Não :'))
-if continuar in 'Ss':
-    print(f'Total de jogadas {jogada} e voce venceu {vitoria} vez(es)')
-    print("FIM de JOGO")
+            vitoria += 1
+        continuar = str(input('Deseja Continuar [S] Sim e [N] Não :'))
+    if continuar in 'nN':
+        print(f'\033[34mTotal de jogadas {jogada}\033[m\n\033[33mVitoria {vitoria} vez(es)\033[m')
+        print("FIM de JOGO")
