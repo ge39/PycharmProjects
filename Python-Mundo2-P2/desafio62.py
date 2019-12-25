@@ -12,12 +12,11 @@ contador = 1
 total = 0
 mais = 10
 while mais != 0:
+    total = total + mais
     while contador <= total:
-        total = total + mais
-        print('{}'.format(total), end=" ")
-        termo += razao  # soma o valor fornecido na variavel razao fora do laco while
-        contador += 1   # conta a quantidade de repeticao informada na variavel contador no laço while
-
-        print('\nPAUSA')
-        mais = int(input('Quantos termos voce quer mostrar a mais :'))
+        print('{}'.format(termo), end=" ")
+        termo += razao
+        contador += 1
+    print('\033[31m\nPAUSA\033[m')
+    mais = int(input('\033[33mQuantos termos voce quer mostrar a mais\033[m :'))
 print('FIM')
