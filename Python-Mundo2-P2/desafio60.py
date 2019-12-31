@@ -17,7 +17,7 @@ f = 1
 print('\033[34mCalculando o Fatorial {}!\033[m = '.format(n), end='')
 while c > 0:
        print('{}'.format(c),end= '')
-       print(' X ' if c > 1 else ' = ' , end='')
+       print(' X ' if c > 1 else ' = ', end='')
        f *= c
        c -= 1
 print('\033[31m{}\033[m'.format(f))
