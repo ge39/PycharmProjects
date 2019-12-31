@@ -15,17 +15,19 @@ while pergunta in 'sS':
    valor = float(input('Qual o valor do Produto R$:'))
    pergunta = str(input('Deseja adicionar mais produtos na cesta? :'))
    total += valor
+   maiscaro = valor
+   maisbarato = valor
 
-   if valor > 100.00:
-      qtde += 1
-      vproduto = valor
-      descricao = desc
-    if valor < maiscaro:
-       maisbarato = valor
-    elif valor > maiscaro:
-
+if valor > 100.00:
+  qtde += 1
+  valor
+if valor > maiscaro:
+   maiscaro = valor
+if valor < maisbarato:
+    maisbarato = valor
+    desc
 else:
-       print('*'*60)
-       print(f'Valor total gasto R$ {total:.2f}')
-       print(f'Na cesta tem  {qtde} produtos , que custa {vproduto:.2f} e é o maior valor da cesta')
-
+    print('*'*60)
+    print(f'Valor total gasto R$ {total:.2f}')
+    print(f'Na cesta tem  {qtde} produtos , que custa {valor:.2f} e é o maior valor da cesta')
+    print(f'O produto mais barato é {desc}')
