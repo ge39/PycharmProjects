@@ -1,5 +1,5 @@
 '''
-    crie um programa que leia o nome e opreço de varios produtos
+    crie um programa que leia o nome e o preço de varios produtos
     O programa  deverá perguntar se o usuario vai continuar, e no final mostre
 
     A - Qual é o total gasto na compra
