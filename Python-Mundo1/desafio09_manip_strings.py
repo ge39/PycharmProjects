@@ -16,7 +16,7 @@ print(len(frase))# mostra o comprimento da string
 print(frase.count('o')) # conta quantas vezes a letra aparece na string
 
 #count com fatiamentp
-print(frase.count('o',0,13),'ocorrencias') # vai contar quantas vezes a string 'o' vai aparecer na posicao 0 (index) até a posicao 13 (index)
+print(frase.count('o', 0, 13),'ocorrencias') # vai contar quantas vezes a string 'o' vai aparecer na posicao 0 (index) até a posicao 13 (index)
 
 #find
 print('Palavra video inicia na posiçao :',frase.find('video'))#informa a posicao do index que a palavra ou letras iniciam
