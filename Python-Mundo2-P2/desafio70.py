@@ -18,16 +18,15 @@ while pergunta in 'sS':
    maiscaro = valor
    maisbarato = valor
 
-if valor > 100.00:
-  qtde += 1
-  valor
-if valor > maiscaro:
-   maiscaro = valor
-if valor < maisbarato:
-    maisbarato = valor
-    desc
+   if valor > 100:
+        qtde += 1
+   if valor > maiscaro:
+        maiscaro = valor
+   if valor < maisbarato:
+        maisbarato = valor
+        desc
 else:
-    print('*'*60)
-    print(f'Valor total gasto R$ {total:.2f}')
-    print(f'Na cesta tem  {qtde} produtos , que custa {valor:.2f} e é o maior valor da cesta')
-    print(f'O produto mais barato é {desc}')
+        print('*'*60)
+        print(f'Valor total gasto R$ {total:.2f}')
+        print(f'Na cesta tem  {qtde} produtos , que custa mais de R$ 100.00')
+        print(f'O produto mais barato é {desc}')
