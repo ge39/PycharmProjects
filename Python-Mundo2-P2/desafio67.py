@@ -5,22 +5,12 @@
 '''
 
 print('Tabuada')
-
-numerador = result = 0
-multiplicador = int(input('Digite um numero para gerar a tabuada :'))
-m = multiplicador
-parada = 0
-
-while numerador < 10:
-
-    numerador += 1
-    result = multiplicador * numerador
-    print(f'{m} X {numerador} = {result}')
-    while numerador == 10:
-        numerador = result = 0
-        multiplicador = int(input('Digite um numero para gerar a tabuada :'))
-        m = multiplicador
-        print(f'{m} X {numerador} = {result}')
-        numerador += 1
-        result = multiplicador * numerador
-
+while True:
+    n = int(input('\033[34mQuer ver a tabuada de qual valor?\033[m :'))
+    print('-'*30)
+    if n < 0:
+        break
+    for c in range(1, 11):
+        print(f'{n} X {c} = \033[34m{n*c}\033[m')
+    print('-'*35)
+print('PROGRAMA ENCERRADO , NUMERO NEGATIVO')
