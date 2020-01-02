@@ -7,7 +7,7 @@
     C - Qual o nome do produto mais barato
 '''
 pergunta = 'S'
-valor = total = qtde = vproduto = 0
+total = qtde = vproduto = 0
 maiscaro = maisbarato = 0
 
 while pergunta in 'sS':
