@@ -20,9 +20,9 @@ while pergunta in 'sS':
 
    if valor > 100:
         qtde += 1
-   elif valor > maiscaro:
+   if valor > maiscaro:
         maiscaro = valor
-   elif valor < maisbarato:
+   elif valor <= maisbarato:
         maisbarato = valor
         desc
 else:
