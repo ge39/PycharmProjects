@@ -6,20 +6,11 @@
 
 print('Tabuada')
 
-numerador = result = 0
-multiplicador = int(input('Digite um numero para gerar a tabuada :'))
-m = multiplicador
-parada = 0
-
 while True:
-    numerador += 1
-    result = multiplicador * numerador
-    print(f'{m} X {numerador} = {result}')
-    if numerador == 10:
-        numerador = result = 0
-        multiplicador = int(input('Digite um numero para gerar a tabuada :'))
-        m = multiplicador
-        print(f'{m} X {numerador} = {result}')
-        numerador += 1
-        result = multiplicador * numerador
-
+    n = int(input('Digite um numero para gerar a tabuada :'))
+    print('-' * 60)
+    if n < 0:
+        break
+    for c in range(1, 11):
+        print(f'{n} X {c} = {n*c}')
+    print('-'*60)
