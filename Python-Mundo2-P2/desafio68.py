@@ -17,17 +17,16 @@ while True:
     while tipo not in 'PI':
         tipo = str(input('Voce quer par [p] ou impar[i] :')).strip().upper()[0]
         print(f'Voce jogou {jogador} e o computador jogou {computador}')
-
         if tipo == 'P':
             if total % 2 == 0:
                vitoria += 1
-               print('VOCE VENCEU!!')
+               print('\033[32mVOCE VENCEU!!\033[m')
             else:
                 print('VOCE PERDEU!!')
                 break
         elif tipo == 'I':
             if total % 2 == 1:
-                print('VOCE VENCEU!!')
+                print('\033[32mVOCE VENCEU!!\033[m')
             else:
                 print('VOCE PERDEU!!')
     print('*' * 20)
