@@ -11,12 +11,11 @@ multiplicador = int(input('Digite um numero para gerar a tabuada :'))
 m = multiplicador
 parada = 0
 
-while numerador < 10:
-
+while True:
     numerador += 1
     result = multiplicador * numerador
     print(f'{m} X {numerador} = {result}')
-    while numerador == 10:
+    if numerador == 10:
         numerador = result = 0
         multiplicador = int(input('Digite um numero para gerar a tabuada :'))
         m = multiplicador
