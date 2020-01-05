@@ -25,7 +25,7 @@ while True:
              masc += 1
         if idade < 20 and sexo == 'F':
             fem += 1
-
-    print(f'Temos {contsexo} pessoas com mais de 18 anos')
-    print(f'Total de {masc} pessoas do sexo masculino')
-    print(f'Total de {fem} pessoas do sexo feminino com menos de 20  anos')
+        break
+print(f'Temos {contsexo} pessoas com mais de 18 anos')
+print(f'Total de {masc} pessoas do sexo masculino')
+print(f'Total de {fem} pessoas do sexo feminino com menos de 20  anos')
