@@ -20,19 +20,22 @@ while True:
     while continuar not in 'SN':
         continuar = str(input('Quer continuar [SN]?:')).strip().upper()
         totcompra += preco
+        cont +=1
         if preco > 100:
             prod100 += 1
         if cont == 1:  #se for o primeiro item do looping
             menorpreco = preco
-            print(menorpreco)
+            maiorpreco = preco
         else:
             if preco < menorpreco:
                 menorpreco = preco
-
+            if preco >= maiorpreco:
+                maiorpreco = preco
     if continuar == 'N':
         break
 print('\033[34m********** Dados da compra **********\033[m')
 print(f'Total da compra: R$ {totcompra:.2f}')
 print(f'Compra com {prod100} produtos acima de 100 reais')
 print(f'O produto mais barato tem o valor de {menorpreco:.2f}')
+print(f'O produto mais caro  tem o valor de {maiorpreco}')
 print('{:-^40}'.format('FIM DO PROGRAMA'))
