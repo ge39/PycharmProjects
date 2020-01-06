@@ -16,13 +16,13 @@ while True:
     continuar = str(input('\033[32mDeseja continuar cadastrando:\033[m\033[34m Sim[S] Não[N] ?\033[m')).upper()
 
     if continuar != 'S':
-        contsexo =1
+        contsexo = 1
         print('*' * 60)
 
         if idade > 18:
             contsexo += 1
         if sexo == 'M':
-             masc += 1
+            masc += 1
         if idade < 20 and sexo == 'F':
             fem += 1
 
