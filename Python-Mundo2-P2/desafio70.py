@@ -36,6 +36,6 @@ while True:
 print('\033[34m********** Dados da compra **********\033[m')
 print(f'Total da compra: R$ {totcompra:.2f}')
 print(f'Compra com {prod100} produtos acima de 100 reais')
-print(f'O produto mais barato tem o valor de {menorpreco:.2f}')
-print(f'O produto mais caro  tem o valor de {maiorpreco}')
+print(f'O produto mais barato tem o valor de \033[34mR$ {menorpreco:.2f}\033[m')
+print(f'O produto mais caro  tem o valor de \033[31mR$ {maiorpreco:.2f}\033[m')
 print('{:-^40}'.format('FIM DO PROGRAMA'))
