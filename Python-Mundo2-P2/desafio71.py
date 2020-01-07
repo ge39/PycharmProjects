@@ -8,7 +8,6 @@ saldo = int(100.00)
 while True:
     print('*'*60)
     saque = int(input('Quanto quer sacar ? R$:'))
-
     if saque <= saldo:
         saldo -= saque
         print(f'Saque autorizado!!!\nSaldo Anterior: R${saldo + saque:.2f}\nValor do Saque: R${saque:.2f}\nSaldo Atualizado R${saldo:.2f}')
