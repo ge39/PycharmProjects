@@ -6,26 +6,27 @@
     B - quantos homens foram cadastrados
     C - quantas mulheres tem menos de 20 anos
 '''
-
-continuar = 'S'
-idade = contsexo = fem = masc = 0
-sexo = 'F'
+tot18 = totH = totM20 = 0
 while True:
-    idade = int(input('Qual é a sua idade: ?'))
-    sexo = str(input('Informe o sexo Masculino[M], Feminino[F] :')[0]).upper()
-    continuar = str(input('\033[32mDeseja continuar cadastrando:\033[m\033[34m Sim[S] Não[N] ?\033[m')).upper()
+    print('Cadastro de Pessoas')
+    print('\033[34m*\033[m' * 60)
+    idade = int(input('idade :'))
+    sexo = ' '      #limpa a variavel
 
-    if continuar != 'S':
-        contsexo = 1
-        print('*' * 60)
-
-        if idade > 18:
-            contsexo += 1
-        if sexo == 'M':
-            masc += 1
-        if idade < 20 and sexo == 'F':
-            fem += 1
-
-    print(f'Temos {contsexo} pessoas com mais de 18 anos')
-    print(f'Total de {masc} pessoas do sexo masculino')
-    print(f'Total de {fem} pessoas do sexo feminino com menos de 20  anos')
+    while sexo not in 'FM':     #enquanto o valor  digitado  não for o correto [FM],  a repetição não para
+        sexo = str(input('Sexo: [M/F]')).strip().upper()[0]
+    if idade >= 18:
+        tot18 += 1
+    if sexo == 'M':
+        totH += 1
+    if sexo == 'F' and idade < 20:
+        totM20 += 1
+    resp = ' '  #limpa o  campo resposta
+    while resp not in 'SN':  # se a resposta digitada for diferente de [SN], continue perguntando
+        resp = str(input('Quer continuar? [S/N]:')).strip().upper()[0]
+        print('\033[34m*\033[m'*60)
+    if resp == 'N':
+        break
+print(f'Total de pessoas com mais de 18 anos: {tot18}')
+print(f'Ao todo temos {totH} homens cadastrados')
+print(f'E temos {totM20} mulheres com menos de 20 anos')

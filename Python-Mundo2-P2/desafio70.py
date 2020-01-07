@@ -6,27 +6,36 @@
     B - Quantos produtos custam mais de R$ 100,00
     C - Qual o nome do produto mais barato
 '''
-pergunta = 'S'
-valor = total = qtde = vproduto = 0
-maiscaro = maisbarato = 0
 
-while pergunta in 'sS':
-   desc = str(input('Qual a descrição do Produto :')).strip().upper()
-   valor = float(input('Qual o valor do Produto R$:'))
-   pergunta = str(input('Deseja adicionar mais produtos na cesta? :'))
-   total += valor
-   maiscaro = valor
-   maisbarato = valor
+totcompra = prod100 = menorpreco = maiorpreco = cont = 0
 
-   if valor > 100:
-        qtde += 1
-   elif valor > maiscaro:
-        maiscaro = valor
-   elif valor < maisbarato:
-        maisbarato = valor
-        desc
-else:
-        print('*'*60)
-        print(f'Valor total gasto R$ {total:.2f}')
-        print(f'Na cesta tem  {qtde} produtos , que custa mais de R$ 100.00')
-        print(f'O produto mais barato é {desc}')
+print('*'*60)
+print('Mega Liquidação')
+print('*' * 60)
+
+while True:
+    produto = str(input('Produto :')).strip().upper()
+    preco = float(input('Qual o Preço R$:'))
+    continuar = ' '
+    while continuar not in 'SN':
+        continuar = str(input('Quer continuar [SN]?:')).strip().upper()
+        totcompra += preco
+        cont +=1
+        if preco > 100:
+            prod100 += 1
+        if cont == 1:  #se for o primeiro item do looping
+            menorpreco = preco
+            maiorpreco = preco
+        else:
+            if preco < menorpreco:
+                menorpreco = preco
+            if preco >= maiorpreco:
+                maiorpreco = preco
+    if continuar == 'N':
+        break
+print('\033[34m********** Dados da compra **********\033[m')
+print(f'Total da compra: R$ {totcompra:.2f}')
+print(f'Compra com {prod100} produtos acima de 100 reais')
+print(f'O produto mais barato tem o valor de \033[34mR$ {menorpreco:.2f}\033[m')
+print(f'O produto mais caro  tem o valor de \033[31mR$ {maiorpreco:.2f}\033[m')
+print('{:-^40}'.format('FIM DO PROGRAMA'))
