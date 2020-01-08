@@ -12,9 +12,9 @@ total = saque
 ced = 100
 totced  = 0
 while True:
-    if total >= ced:
-       total -= ced # subtrai o valor da cedula do valor do saque
-       totced += 1  # soma quantas vezes o valor do saque foi subtraido do valor da cedula
+    if total >= ced:  # verifica enquanto o valor do saque for maior ou igual o valor da cedula
+       total -= ced   # subtrai o valor da cedula do valor do saque
+       totced += 1    # soma o total de cedula para dar o valor do saque ex: R$ 100 = 2 cedulas de R$ 50,00
     else:
         if totced > 0:
           print(f'total de {totced} no valor de R${ced}')
