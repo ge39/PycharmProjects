@@ -20,12 +20,12 @@ while True:
     while continuar not in 'SN':
         continuar = str(input('Quer continuar [SN]?:')).strip().upper()
         totcompra += preco
-        cont +=1
+        cont += 1
         if preco > 100:
             prod100 += 1
         if cont == 1:  #se for o primeiro item do looping
-            menorpreco = preco
-            maiorpreco = preco
+            menorpreco = maiorpreco = preco
+
         else:
             if preco < menorpreco:
                 menorpreco = preco
