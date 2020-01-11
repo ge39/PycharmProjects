@@ -26,4 +26,8 @@ for comida in lanche:
 print('*'*30)
 for cont in range(0, len(lanche)):
     print(lanche[cont])
-
+print('*'*30)
+for pos, comida in enumerate(lanche):
+    print(f'Eu vou comer {comida} na posição {pos}')
+    #print('*'*30)
+    #print(sorted(lanche))
