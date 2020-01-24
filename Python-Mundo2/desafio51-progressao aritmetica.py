@@ -7,7 +7,12 @@ print('='*30)
 
 primeiro = int(input('Primeiro termo :'))
 razao = int(input('Razao :'))
-decimo = primeiro + (10 - 1) * razao
+progressao = int(input('Progressao :'))
+decimo = primeiro + (progressao) * razao
+continuar = 'N'
 
-for c in range(primeiro, 10, razao):
-    print('razao'.format(c))
+
+for pa in range(primeiro, decimo, razao):
+    print(f'{pa}', end=' -> ')
+
+
