@@ -2,9 +2,8 @@
     progressão aritmetica
 '''
 print('='*30)
-print('10 TERMOS DE UMA PA' )
+print('TERMOS DE UMA PA' )
 print('='*30)
-
 continuar = 'S'
 while True:
     if continuar in 'Ss':
