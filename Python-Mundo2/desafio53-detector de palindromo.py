@@ -3,6 +3,7 @@
     a sacada da casa
     o lobo ama o bolo
     a torre da derrota
+    anotaram a data da maratona
 
 '''
 frase = str(input('Digite uma Frase :')).strip().upper()
