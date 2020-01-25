@@ -5,14 +5,17 @@ print('='*30)
 print('10 TERMOS DE UMA PA' )
 print('='*30)
 
-primeiro = int(input('Primeiro termo :'))
-razao = int(input('Razao :'))
-progressao = int(input('Progressao :'))
-decimo = primeiro + (progressao) * razao
-continuar = 'N'
+continuar = 'S'
+while True:
+    if continuar in 'Ss':
+        primeiro = int(input('Primeiro termo :'))
+        progressao = int(input('Progressao :'))
+        razao = int(input('Razao :'))
+        decimo = primeiro + (progressao) * razao
 
-
-for pa in range(primeiro, decimo, razao):
-    print(f'{pa}', end=' -> ')
-
-
+        for pa in range(primeiro, decimo, razao):
+          print(f'{pa}', end=' -> ')
+        continuar = str(input('\nDeseja continuar[S/N] :'))
+    else:
+      break
+print('Fim da PA')
