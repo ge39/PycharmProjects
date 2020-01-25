@@ -12,6 +12,7 @@ for c in range(1, num+1):
         print(f'\033[31m', end=' ')
     print(c, end=" ")
 print(f'\033[m\nO numero {num} foi dividido {tot} Vezes')
+
 if tot > 2:
     print(f'Portanto o numero {num} não é Primo')
 else:
