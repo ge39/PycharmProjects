@@ -3,9 +3,10 @@
     Depois disso, mostre a listagem de numeros gerados e tambem indique
     o menor eo maior valor que estão na tupla
 '''
-cont = 1
+n = 0
 from random import randint
-while cont <= 5:
-    lista = randint(10, 15)
-    cont += 1
-print(f'{lista}')
+numeros = (randint(10, 15), randint(10, 15), randint(10, 15), randint(10, 15), randint(10, 15))
+print('Os valores sorteados foram: ', end='')
+for n in numeros:
+    print(f'{n}', end=" ")
+print(f'\nO maior valor sorteado foi: {max(numeros)}\nO menor valor sorteado foi : {min(numeros)}')
