@@ -7,8 +7,8 @@
 
 '''
 frase = str(input('Digite uma Frase :')).strip().upper()
-palavras = frase.split()    # cria uma lista, e separa as palvras entre espaços
-junto = ''.join(palavras)   # juntou a lista
+palavras = frase.split()    # cria uma lista de palavras
+junto = ''.join(palavras)   # juntou a lista removendo os espaços
 
 # 1ª opção de solução
 #inverso = ''
