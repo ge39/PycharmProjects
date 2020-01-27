@@ -8,13 +8,13 @@
 '''
 frase = str(input('Digite uma Frase :')).strip().upper()
 palavras = frase.split()    # cria uma lista, e separa as palvras entre espaços
-junto = ''.join(palavras)   # juntou a lista
+junto = ''.join(palavras)   # juntou a lista, removendo os espaços
 
 # 1ª opção de solução
 #inverso = ''
-#   o laço for inverte a frase da ultima letra para a primeira
+#  o laço for inverte a frase da ultima letra para a primeira
 #  for letra in range(len(junto)-1, -1, -1):
-    #  inverso += junto[letra]
+#  inverso += junto[letra]
 
 # 2ª opção de solução
 inverso = junto[::-1]
