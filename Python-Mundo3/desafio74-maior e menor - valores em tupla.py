@@ -5,8 +5,12 @@
 '''
 n = 0
 from random import randint
-numeros = (randint(10, 15), randint(10, 15), randint(10, 15), randint(10, 15), randint(10, 15))
+from datetime import datetime
+atual = datetime.today()
+
+numeros = (randint(1, 15), randint(10, 15), randint(10, 15), randint(10, 15), randint(10, 15))
 print('Os valores sorteados foram: ', end='')
 for n in numeros:
     print(f'{n}', end=" ")
 print(f'\nO maior valor sorteado foi: {max(numeros)}\nO menor valor sorteado foi : {min(numeros)}')
+print(atual)
