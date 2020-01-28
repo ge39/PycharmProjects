@@ -19,7 +19,7 @@ if 3 not in num:
     print('O valor 3 nao apareceu em nenhuma posição !!')
 else:
     print(f'O valor 3 apareceu na posição {num.index(3)+1}')
-print('Os valores pares são: ',end='')
+print('Os valores pares são: ', end='')
 for n in num:
     if n % 2 == 0:
         print(f' {n}', end='')
