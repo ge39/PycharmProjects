@@ -3,10 +3,9 @@
    zero até vinte
    Seu programa deverá ler um numero pelo teclado (entre 0 e 20)
    e mostra-lo por extenso
-''''
+'''
 n = ('Zero', 'Um', 'Dois', 'Tres', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez', 'Onze',
-     'Doze', 'Treze', 'Quatorze',
-        'Quinze', 'Dezesseis', 'Dezesete', 'Dezoito', 'Dezenove', 'Vinte')
+     'Doze', 'Treze', 'Quatorze','Quinze', 'Dezesseis', 'Dezesete', 'Dezoito', 'Dezenove', 'Vinte')
 continuar = 'S'
 while True:
     while continuar in 'Ss':
