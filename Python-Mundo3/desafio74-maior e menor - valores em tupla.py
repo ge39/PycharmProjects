@@ -5,8 +5,6 @@
 '''
 n = 0
 from random import randint
-from datetime import datetime
-atual = datetime.today()
 
 numeros = (randint(1, 15), randint(10, 15), randint(10, 15), randint(10, 15), randint(10, 15))
 print('Os valores sorteados foram: ', end='')
