@@ -17,5 +17,5 @@ for pos in range(0, len(listagem)):
     if pos % 2 == 0:
         print(f'\033[34m{listagem[pos]:.<30}', end=' ')
     else:
-        print(f'R$ {listagem[pos]:.>5}\033[m')
-print('-'* 40)
+        print(f'R$ {listagem[pos]:>5}\033[m')
+print('-'*40)
