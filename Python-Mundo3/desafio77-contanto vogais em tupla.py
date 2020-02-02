@@ -12,8 +12,6 @@ for lista in palavras :
 
     #percorre os dados da variavel lista e armazena em "vogal"
     for vogal in lista:
-        if vogal in 'aeiou':
-            print(f'\033[32m{vogal.upper()}\033[m', end=' ')
-
-    #identifica e separa os valores que estão armazenados na variavel letra
-
+     #identifica e separa os valores que estão armazenados na variavel letra
+     if vogal in 'aeiou':
+        print(f'\033[32m{vogal.upper()}\033[m', end=' ')
