@@ -41,6 +41,12 @@ valores.sort()
 print('='*40)
 print('ordem crescente')
 print(valores)
+print('='*40)
+print('adicionando um elemento na lista usando o metodo append')
+num = [1, 3, 5, 9]
+num[3] = 0
+num.append(7)
+print(num)
 
 
 
