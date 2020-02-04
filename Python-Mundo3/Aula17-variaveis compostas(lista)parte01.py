@@ -15,7 +15,7 @@ print(lanche)
 
 print('='*40)
 print('\033[31mINSERT\033[m - adiciona um elemento em qualquer posicao da lista')
-lanche.insert(0,'Coco')
+lanche.insert(0, 'Coco')
 print(lanche)
 
 print('='*40)
