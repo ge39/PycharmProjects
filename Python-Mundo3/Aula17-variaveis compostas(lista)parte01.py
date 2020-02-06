@@ -87,13 +87,14 @@ print('Cheguei ao final da lista')
 print('='*40)
 print('Adicionando os valores vindo do teclado na lista ')
 valores = list()
-
+'''
 for cont in range(0, 5):
     valores.append(int(input('Digite um valor :')))
 for c, v in enumerate(valores):
     print(f'Para cada posição\033[34m {c}\033[m temos o valor \033[35m{v}\033[m')
 print('Cheguei ao final')
 print('='*40)
+'''
 print('Peculiaridade do Python\nQuando voce cria duas ou mais lista e entre elas tem uma ligação, e nelas conter elementos iguais e de mesmo valor\nAo alterar esse elemento em uma das listas o elemento será alterado nas duas listas ')
 a = [1, 3, 7, 0]
 b = a
@@ -104,3 +105,13 @@ print('Exibindo a alteração feita na lista A, o numero 7 para o numero 8, alte
 print(f'lista A: {a}')
 print(f'Lista B: {b}')
 print('='*40)
+print('Quando se faz a cópia da lista A, a lista B não fica associada,\nSe alterar uma das listas, só é alterada a lista selecionada')
+a= [1, 3, 6, 0]
+b = a[:] # nesse formato a lista A é copiada para a lista
+print(f'Lista A: {a}')
+print(f'Lista B: {b}')
+print('='*40)
+print('Alterando o elemento na posição 2 da lista B, numero 6  para 10')
+b[2] = 10
+print(f'A lista A: {a}')
+print(f'A Lista B: {b}')
