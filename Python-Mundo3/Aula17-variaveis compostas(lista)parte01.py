@@ -93,8 +93,14 @@ for cont in range(0, 5):
 for c, v in enumerate(valores):
     print(f'Para cada posição\033[34m {c}\033[m temos o valor \033[35m{v}\033[m')
 print('Cheguei ao final')
-
-
-
-
-
+print('='*40)
+print('Peculiaridade do Python\nQuando voce cria duas ou mais lista e entre elas tem uma ligação, e nelas conter elementos iguais e de mesmo valor\nAo alterar esse elemento em uma das listas o elemento será alterado nas duas listas ')
+a = [1, 3, 7, 0]
+b = a
+print(f'\033[32mlista A:\033[m {a}')
+print(f'\033[32mLista B:\033[m {b}')
+b[2] = 8
+print('Exibindo a alteração feita na lista A, o numero 7 para o numero 8, alterando a lista B, pois estão ligadas ')
+print(f'lista A: {a}')
+print(f'Lista B: {b}')
+print('='*40)
