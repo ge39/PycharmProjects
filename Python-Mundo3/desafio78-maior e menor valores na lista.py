@@ -2,7 +2,7 @@
   faça um programa que leia 5 valores numericos e guarde em uma lista
   No final, mostre qual foi o maior e o menor valor digitado e as suas respectivas posições
 '''
-c = pos = maior = menor = 0
+maior = menor = 0
 listanum = []
 for c in range(0, 5):
     listanum.append(int(input(f'Digite um Valor na posição {c}: ')))
