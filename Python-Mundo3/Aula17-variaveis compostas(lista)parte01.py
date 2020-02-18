@@ -23,7 +23,8 @@ del lanche[3]
 print(lanche)
 
 print('='*40)
-print('\033[31m pop\033[m - por padrão apaga o ultimo elemento ou um elemento da lista adicionando um parametro ao indice')
+print('\033[31m pop\033[m - por padrão apaga o ultimo elemento ou um elemento da lista '
+      'adicionando um parametro ao indice')
 print(lanche.pop(3))
 print('='*40)
 print('\033[31m REMOVE\033[m - elimina o elemento pelo seu conteudo, passando o nome do Objeto')
@@ -41,7 +42,8 @@ print('='*40)
 print('ordem crescente')
 print(valores)
 print('='*40)
-print('\033[31madicionando o elemento "7" na lista, usando o metodo append,\no elemento é acdicionado no final da lista\033[m')
+print('\033[31madicionando o elemento "7" na lista, usando o metodo append,'
+      '\no elemento é acdicionado no final da lista\033[m')
 num = [1, 3, 5, 9]
 print(num)
 num[3] = 0

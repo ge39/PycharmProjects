@@ -8,7 +8,7 @@ for p in range(1, 6):
     if p == 1:
         maiorpeso = peso
         menorpeso = peso
-    else :
+    else:
         if peso <= menorpeso:
             menorpeso =peso
         elif peso >= maiorpeso:
