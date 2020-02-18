@@ -26,7 +26,7 @@ print('='*40)
 print('\033[31m pop\033[m - por padrão apaga o ultimo elemento ou um elemento da lista adicionando um parametro ao indice')
 print(lanche.pop(3))
 print('='*40)
-print('\033[31m REMOVE\033[m - elimina o elemento pelo seu conteudo, Nome do Objeto')
+print('\033[31m REMOVE\033[m - elimina o elemento pelo seu conteudo, passando o nome do Objeto')
 if 'Suco' in lanche:
     print(lanche.remove('Suco'))
 print(lanche)
