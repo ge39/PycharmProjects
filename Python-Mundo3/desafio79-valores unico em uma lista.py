@@ -4,13 +4,16 @@
     Ele não será adicionado.
     No final, serão exibidos todos os valores unicos digitados em ordem crescente
 '''
-valores = 0
+valor = []
 continuar ='S'
 while True:
     num = int(input('Digite um numero :'))
     continuar = str(input('Deseja continuar : [S/N]'))
-    num.insert(num)
+    if num in valor:
+        print('nunero ja existe')
+    else:
+      valor.append(num)
     if continuar not in 'Ss':
         break
-print(num)
+print(valor)
 print('Fim do Programa')
