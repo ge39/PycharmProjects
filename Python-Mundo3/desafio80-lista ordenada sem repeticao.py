@@ -11,7 +11,7 @@ while True:
     resp = str(input('Deseja continuar [S/N] '))
     if resp in 'nN':
         break
-    if num == 0 or num >= lista:
+    if num == 0:
         lista.append(num)
         print(f'Numero {num} adicionado no final da lista')
         print(len(lista))
