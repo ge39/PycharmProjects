@@ -5,16 +5,21 @@
 
 '''
 lista = []
-
-while True:
-    num = (int(input('Digite um Numero')))
-    resp = str(input('Deseja continuar [S/N] '))
-
-    if resp in 'nN':
-        break
-    if num == 0:
+for c in range(0, 5):
+    num = (int(input('Digite um Numero: ')))
+    if c == 0 or num > lista[-1]:
         lista.append(num)
-        print(f'Numero {num} adicionado no final da lista')
-        print(len(lista))
+        print(f'Adicionado o numero {num} ao final da lista')
     else:
-        print('menor')
+        index = 0
+        while index < len(lista):
+            if num <= lista[index]:
+                lista.insert(index, num)
+                a = len(lista)
+                print(f'Lista len {a}')
+                print(f'Adicionado o numero {num} na posicao {index} da lista e {lista}')
+                break
+            index += 1
+print('-=' * 30)
+print(f'Os valores digitados em ordem foram  {lista}')
+
