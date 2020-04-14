@@ -9,6 +9,7 @@ lista = []
 while True:
     num = (int(input('Digite um Numero')))
     resp = str(input('Deseja continuar [S/N] '))
+
     if resp in 'nN':
         break
     if num == 0:
