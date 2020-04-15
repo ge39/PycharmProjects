@@ -11,6 +11,7 @@ from itertools import count
 lista = []
 cont = 0
 num = 1
+
 while num != 0:
     num = int(input("Digite um numero :"))
     lista.append(num)
