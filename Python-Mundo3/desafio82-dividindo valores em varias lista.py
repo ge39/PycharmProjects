@@ -5,9 +5,21 @@
     e os valores impares digitados, respectivamente.
     Ao final mostre o conteudo das 3 listas geradas
 '''
-lista = par = impar = []
+lista = []
+par = []
+impar = []
 n = 1
+
 while n != 0:
     n = int(input("Digite um valor :"))
     lista.append(n)
+    if n % 2 == 0:
+        par.append(n)
+    else:
+        impar.append(n)
+
 print(f'Lista geral dos valores {lista}')
+print(f'Lista dos numeros pares {par}')
+print(f'Lista dos numeros impares {impar}')
+
+
