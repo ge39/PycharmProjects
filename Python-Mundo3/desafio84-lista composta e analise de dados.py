@@ -22,6 +22,6 @@ while True:
     if resp not in "sS":
         break
 print(f' Total de pessoas cadastradas: {cont} pessoas')
-print(f'O maior peso foi {mais} e o menor foi {menos}')
+# print(f'O maior peso foi {mais} e o menor foi {menos}')
 print('=-' * 30)
 
