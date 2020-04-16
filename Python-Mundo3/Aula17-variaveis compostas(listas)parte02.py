@@ -43,3 +43,9 @@ print("")
 print("  \033[33mListando todos os dados da estrutura lista Pessoa \n  trazendo todos os dados não definindo o index\033[m")
 print(f'  {pessoa}')
 
+teste = []
+teste.append('Gustavo')
+teste.append(30)
+galera = []
+galera.append(teste[:])
+print(galera)
