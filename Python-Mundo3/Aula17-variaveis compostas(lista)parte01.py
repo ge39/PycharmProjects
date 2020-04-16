@@ -117,7 +117,7 @@ print('Alterando o elemento na posição 2 da lista B, numero 6  para 10')
 b[2] = 10
 print(f'A lista A: {a}')
 print(f'A Lista B: {b}')
-print('='*40)
+
 
 
 
