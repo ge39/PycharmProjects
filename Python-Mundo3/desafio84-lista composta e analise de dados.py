@@ -33,7 +33,7 @@ print(f'O maior peso foi de {maior} Kg. Peso de ', end='')  # imprime o maior pe
 
 for p in lista:                                 # criado um ponteiro "p" para ler a posição do array "lista"
     if p[1] == maior:                           # Se o index 1 da lista, "o index 1 representa a lista na posição[1] = peso"
-        print(f'{p[0]},', end='')               # imprime o nome da pessoa
+       print(f'{p[0]},', end='')               # imprime o nome da pessoa
 print()
 print(f'O menor peso foi de {menor} Kg. Peso de ', end='') # imprime o peso da pessoa
 for p in lista:
