@@ -29,6 +29,7 @@ while True:
     if resp not in "sS":
         break
 print(f'Total de pessoas cadastradas: {len(lista)} pessoas')
+    # Descobrindo qual é a pessoa mais pesada e a pessoa mais leve
 for p in lista:                                 # criado um ponteiro "p" para ler a posição do array "lista"
     if p[1] == menor:                           # Se o index 1 da lista, "o index 1 representa a lista na posição[1] = peso"
         print(f'[{p[0]}],', end=' ')            # imprime o nome da pessoa
