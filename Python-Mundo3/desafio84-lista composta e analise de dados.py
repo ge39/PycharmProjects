@@ -15,29 +15,28 @@ while True:
     pessoa.append(str(input("Digite o nome: ").upper().strip()))
     pessoa.append(float(input("Qual o peso: ")))
 
-    if len(lista) == 0:
-        maior = menor = pessoa[1]
-    else:
-        if pessoa[1] > maior:
-            maior = pessoa[1]
-        if pessoa[1] < menor:
-            menor = pessoa[1]
-    lista.append(pessoa[:])
-    pessoa.clear()
+    if len(lista) == 0:  # se a lista for vazia faça...
+        maior = menor = pessoa[1]   # o maior peso e o menor peso será o primeiro peso digitado
+    else:                           # se a lista não for vazia faça...
+        if pessoa[1] > maior:       # se o peso digitado for maior que o peso armazenado na variavel "maior"
+            maior = pessoa[1]       # a variavel maior recebe o valor digitado pelo usuario
+        if pessoa[1] < menor:       # se o peso digitado for menor que o peso armazenado na variavel "menor"
+            menor = pessoa[1]       # a variavel menor recebe o valor digitado pelo usuario
+    lista.append(pessoa[:])         # é feito uma cópia da lista pessoa para o array lista
+    pessoa.clear()                  # os dados das lista pessoa são apagados
     resp = str(input("Quer continuar: ")).upper()
 
     if resp not in "sS":
         break
 print(f'Total de pessoas cadastradas: {len(lista)} pessoas')
-for p in lista:
-    if p[1] == menor:
-        print(f'{p[0]} ', end='')
-        print()
-        print(f'tem o menor peso de {menor}')
-    elif p[1] == maior:
-        print(f'{p[0]} ', end='')
-        print()
-        print(f'tem maior peso de {maior}')
+for p in lista:                                 # criado um ponteiro "p" para ler a posição do array "lista"
+    if p[1] == menor:                           # Se o index 1 da lista, "o index 1 representa a lista na posição[1] = peso"
+        print(f'[{p[0]}],', end=' ')            # imprime o nome da pessoa
+        print(f'tem menor peso de {menor}')     # imprime o peso da pessoa
+    elif p[1] == maior:                         # se o index 1 for = ao maior peso da lista
+        print(f'{p[0]} ,', end=' ')             # imprime o nome da pessoa
+        #print()
+        print(f'tem o maior peso de {maior}')  # imprime o peso da pessoa
 print('=-' * 30)
 
 
