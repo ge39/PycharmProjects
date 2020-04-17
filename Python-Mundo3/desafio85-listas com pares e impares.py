@@ -8,14 +8,11 @@ for v in range(0, 7):
     num.append(float(input(f"Digite o {v + 1}º numero: ")))
 print(num)
 
-for par in num:
-    if par % 2 == 0:
-        print('Par :', end='')
-        print(f'{par}\n ', end='')
+for p in num:
+    if p % 2 == 0:
+       print(f'par - {p}\n ', end='')
 
-for impar in num:
-    if impar % 2 == 1:
-        print('Impar :', end='')
-        print(f'{impar}\n ', end='')
+    else:
+        print(f'impar - {p}\n ', end='')
 
 
