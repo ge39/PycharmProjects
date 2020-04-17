@@ -29,15 +29,17 @@ while True:
     if resp not in "sS":
         break
 print(f'Total de pessoas cadastradas: {len(lista)} pessoas')
-    # Descobrindo qual é a pessoa mais pesada e a pessoa mais leve
+print(f'O maior peso foi de {maior} Kg. Peso de ', end='')  # imprime o maior peso da pessoa
+
 for p in lista:                                 # criado um ponteiro "p" para ler a posição do array "lista"
-    if p[1] == menor:                           # Se o index 1 da lista, "o index 1 representa a lista na posição[1] = peso"
-        print(f'[{p[0]}],', end=' ')            # imprime o nome da pessoa
-        print(f'tem menor peso de {menor}')     # imprime o peso da pessoa
-    elif p[1] == maior:                         # se o index 1 for = ao maior peso da lista
-        print(f'{p[0]} ,', end=' ')             # imprime o nome da pessoa
-        #print()
-        print(f'tem o maior peso de {maior}')  # imprime o peso da pessoa
-print('=-' * 30)
+    if p[1] == maior:                           # Se o index 1 da lista, "o index 1 representa a lista na posição[1] = peso"
+        print(f'{p[0]},', end='')               # imprime o nome da pessoa
+print()
+print(f'O menor peso foi de {menor} Kg. Peso de ', end='') # imprime o peso da pessoa
+for p in lista:
+    if p[1] == menor:                         # se o index 1 for = ao maior peso da lista
+        print(f'{p[0]},', end=' ')             # imprime o nome da pessoa
+print()
+
 
 
