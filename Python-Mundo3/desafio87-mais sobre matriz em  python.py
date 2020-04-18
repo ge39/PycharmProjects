@@ -30,4 +30,11 @@ for c in range(0, 3):
         maior = matriz[1][c]
 print(f'O maior valor da 2ª linha é {maior}.')
 
+for c in range(0, 3):
+    for l in range(0, 3):
+        if c == 0 and l == 0:
+            mai = matriz[l][c]
+        elif matriz[l][c] > mai:
+            mai = matriz[l][c]
+print(f'\033[31mO maior numero da matriz é {mai}\033[m')
 
