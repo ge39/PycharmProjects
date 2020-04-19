@@ -36,5 +36,5 @@ for c in range(0, 3):
             mai = matriz[l][c]
         elif matriz[l][c] > mai:
             mai = matriz[l][c]
-print(f'\033[31mO maior numero da matriz é {mai}\033[m')
+print(f'\033[31mO maior valor da matriz é {mai}\033[m')
 
