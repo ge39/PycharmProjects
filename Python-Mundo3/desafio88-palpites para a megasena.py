@@ -14,7 +14,7 @@ print('-='*30)
 
 quant = int(input('Quantos jogos quer que eu sorteie?: '))
 tot = 1
-while tot <= quant:             # executa o loop até atingir o numero informado pelo usuario
+while tot <= quant:             # executa o loop até atingir o numero digitado pelo usuario
     cont = 0
     while True:
         num = randint(1, 60)    # executa o random de numeros de 1 até 60
