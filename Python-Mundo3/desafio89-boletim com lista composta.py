@@ -11,7 +11,7 @@ while True:
     nota1 = float(input('1ª nota: '))
     nota2 = float(input('2ª nota: '))
     media = (nota1 + nota2)/2
-    ficha.append([nome, [nota1,nota2], media])
+    ficha.append([nome, [nota1, nota2], media])
     resp = str(input("Deseja continuar [S/N] "))
     if resp in 'Nn':
         break
