@@ -51,3 +51,27 @@ print("filme = \033[33m{\033[34m'titulo'\033[m: \033[31m'Star Wars'\033[m,"
       "\n          \033[34m\033[34m'diretor'\033[m: \033[31m'George Lucas'\033[m"
       "\n        \033[33m}\033[m")
 print('.'*40)
+print("Podemos acessar os valores da estrutra filme\nutilizamos o método "
+      "\033[33mvalues = \033[34mprint(\033[mfilme\033[31m.values()\033[34m)\033[m\n"
+      "Ele retorna todos os elementos, 'Valores' do meu dicionario,'\033[34mStar Wars, 1977 e George Lucas\033[m'")
+print()
+print("Podemos acessar os indices da estrutra filme\nutilizamos o método "
+      "\033[33mKey = \033[34mprint(\033[mfilme\033[31m.keys()\033[34m)\033[m\n"
+      "Ele retorna todos os indices literais da estrutura,'\033[34mtitulo, ano e diretor\033[m' ")
+
+print()
+print("Podemos acessar os Keys(indices), Values(elementos) da estrutra filme\nutilizamos o método "
+      "\033[33mitems = \033[34mprint(\033[mfilme\033[31m.items()\033[34m)\033[m\n"
+      "Ele retorna todos os indices literais da estrutura,"
+      "'\033[34mtitulo:Star Wars, ano:1977 e diretor:George Lucas\033[m' ")
+
+print("Podemos trabalhar com tuplas, listas e dicionarios juntos, por exemplo :")
+print()
+print('Locadora' )
+print('.'* 100)
+print('.' * 97)
+print(".|\033[34mStar wars|1977|'George Lucas'\033[m|**|'\033[33mAvengers'|2012|'Joss Whedon\033[m'|**|'\033[31mMatrix'|1999|'Wachowski\033[m'| .")
+print('.' * 97)
+print('  titulo     ano    diretor    |  |  titulo    ano     diretor  |  | titulo   ano    diretor')
+print('.'* 100)
+print('              0                  |              1                 |              2               |   ')
