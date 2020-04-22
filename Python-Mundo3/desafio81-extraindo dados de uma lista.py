@@ -6,6 +6,17 @@
     B - A lista de valores ordenados de forma decrescente
     C - Se o valor 5 foi digitado e está ou não na lista
 '''
+
+lista = []
+
+while True:
+    num = int(input('Digite um numero :'))
+    resp = str(input('Deseja continuar [S/N} :'))
+    lista.append(num)
+    lista1 = len(lista)
+    if resp in 'nN':
+        break
+print(len(f' Total de numeros digitados {lista1}'))
 from itertools import count
 
 lista = []
