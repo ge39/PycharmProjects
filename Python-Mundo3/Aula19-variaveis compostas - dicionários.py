@@ -73,5 +73,48 @@ print('.' * 97)
 print(".|\033[34mStar wars|1977|'George Lucas'\033[m|**|'\033[33mAvengers'|2012|'Joss Whedon\033[m'|**|'\033[31mMatrix'|1999|'Wachowski\033[m'| .")
 print('.' * 97)
 print('  titulo     ano    diretor    |  |  titulo    ano     diretor  |  | titulo   ano    diretor')
-print('.'* 100)
-print('              0                  |              1                 |              2               |   ')
+print('.' * 100)
+print('         index 0                 |         index 1                |         index 2               |   ')
+
+print('-=' * 70)
+print('Exercicios na prática')
+print('-=' * 70)
+pessoas = {'nome': 'Gustavo','sexo': 'M', 'idade': 40}
+print(f'O {pessoas["nome"]} tem {pessoas["idade"]} anos')
+print('Exibindo os valores das \033[31mkeys\033[m "indices')
+print(pessoas.keys())
+print()
+print('Exibindo os valores com \033[31mValues\033[m "elementos"')
+print(pessoas.values())
+print()
+print('Exibindo os valores das \033[31mitems\033[m " chave valor ou indices e elementos')
+print(pessoas.items())
+print()
+print('usando um laço for para acessar entre as keys ')
+print()
+pessoas = {'nome': 'Gustavo','sexo': 'M', 'idade': 40}
+print('Exibe apenas os valores das keys "indices"', end=" ")
+for k in pessoas.keys():
+      print(f'\033[34m{k}, \033[m', end="")
+print()
+print('usando um laço for para acessar entre as values')
+print()
+print('Exibe apenas o conteudo dos Values "elementos', end =" ")
+pessoas = {'nome': 'Gustavo', 'sexo': 'M', 'idade': 40}
+for v in pessoas.values():
+      print(f'\033[34m{v}, \033[m', end="")
+print()
+print('Usando o items, "chave , Valor = indice, elemento"')
+for k, v in pessoas.items():
+      print(f'chave \033[34m{k} = {v}, \033[m')
+print()
+print("apagando um elemento, o elemento Sexo será eliminado, com o comando del pessoas['sexo'']")
+del pessoas['sexo']
+for k, v in pessoas.items():
+      print(f'{k} = {v}')
+print()
+print("Substituindo o nome Gustavo por Leandro, com o comando pessoas['nome'] = 'Leandro']")
+pessoas = {'nome': 'Gustavo', 'sexo': 'M', 'idade': 40}
+pessoas['nome'] = 'leandro'
+for k, v in pessoas.items():
+      print(f'{k} = {v}')
