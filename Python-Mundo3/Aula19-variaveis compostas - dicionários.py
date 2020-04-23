@@ -67,15 +67,6 @@ print("Podemos acessar os Keys(indices), Values(elementos) da estrutra filme\nut
 
 print("Podemos trabalhar com tuplas, listas e dicionarios juntos, por exemplo :")
 print()
-print('Locadora' )
-print('.'* 100)
-print('.' * 97)
-print(".|\033[34mStar wars|1977|'George Lucas'\033[m|**|'\033[33mAvengers'|2012|'Joss Whedon\033[m'|**|'\033[31mMatrix'|1999|'Wachowski\033[m'| .")
-print('.' * 97)
-print('  titulo     ano    diretor    |  |  titulo    ano     diretor  |  | titulo   ano    diretor')
-print('.' * 100)
-print('         index 0                 |         index 1                |         index 2               |   ')
-
 print('-=' * 70)
 print('Exercicios na prática')
 print('-=' * 70)
@@ -118,3 +109,23 @@ pessoas = {'nome': 'Gustavo', 'sexo': 'M', 'idade': 40}
 pessoas['nome'] = 'leandro'
 for k, v in pessoas.items():
       print(f'{k} = {v}')
+print()
+print('Locadora' )
+print('.'* 100)
+print('.' * 97)
+print(".|\033[34mStar wars|1977|'George Lucas'\033[m|**|'\033[33mAvengers'|2012|'Joss Whedon\033[m'|**|'\033[31mMatrix'|1999|'Wachowski\033[m'| .")
+print('.' * 97)
+print('  titulo     ano    diretor    |  |  titulo    ano     diretor  |  | titulo   ano    diretor')
+print('.' * 100)
+print('\033[31m               0                 |               1                |            2               |   \033[m')
+print('No exemplo acima, Temos uma estrutura de lista \033[34mchamada locadora'
+      '\033[m com 3 elementos,\033[31m 0, 1, 2\033[m\nDentro do elemento 0 temos: um dicionario, Elemento 1: um dicionario\n'
+      'Elemento 2 outro dicionario\nAs listas são identificadas ou numeros '
+      'e os dicionarios por textos (Chaves literais) e numeros ')
+print()
+print("\033[34mprint(\033[mlocadora\033[32m[0]['ano']\033[m\033[33m)\033[m\n"
+      "Locadora = é o nome da minha estrutura, a lista\n"
+      "[0] = é a referencia externa, é o elemento que identifica o dicionario na lista\n"
+      "['ano'] = é a chave do meu dicionario que está no elemento zero")
+print("Exemplificando :\n\033[34mprint(\033[mlocadora\033[32m[0]['ano']\033[m\033[33m)\033[m = 1977")
+print("\033[34mprint(\033[mlocadora\033[32m[2]['titulo']\033[m\033[33m)\033[m = Matrix")
