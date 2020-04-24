@@ -134,4 +134,46 @@ print("Adicionando um elemento na lista pessoas, pessoas['peso'] = 98.7")
 pessoas['peso'] = 98.7
 for k, v in pessoas.items():
       print(f'{k} = {v}')
+      print()
+print('\033[46mCriando um Dicionário dentro de uma lista\033[m')
+print("brasil = [] - Lista\nestado1 = {'uf': 'Rio de Janeiro'} - dicionario\n"
+      "estado2 = {'uf': 'Sao Paulo'} - dicionario")
 
+
+brasil = []
+estado1 = {'uf': 'Rio de Janeiro', 'sigla':'RJ'}
+estado2 = {'uf': 'Sao Paulo','sigla':'SP'}
+brasil.append(estado1)
+brasil.append(estado2)
+print("\033[46mInserindo o dicionario dentro da lista utilizando o metodo append:\033[m\n"
+      "brasil.append(estado1)\nbrasil.append(estado2)")
+print()
+print("\033[46mExibindo o dicionario:\033[m estado1 = {'uf': 'Rio de Janeiro', 'sigla':'RJ'}\n")
+print(f'{brasil} - "print(brasil)"')
+print(brasil[0]['uf'])
+print(brasil[0]['sigla'])
+print()
+print("\033[46mExibindo o dicionario:\033[m estado2 = {'uf': 'Sao Paulo','sigla':'SP'}\n")
+
+print(brasil[1])
+print(brasil[1]['uf'])
+print(brasil[1]['sigla'])
+
+print('\033[46mUtilizando o métoo append em dicionarios\033[m -  brasil.append(estado.copy())')
+estado = dict()
+brasil = list()
+
+for c in range(0, 3):
+      estado['uf'] = str(input('Unidade da Federação :')).upper()
+      estado['sigla'] = str(input('Sigla do estado: ')).upper()
+      brasil.append(estado.copy())
+      print('Utilizando os metodos chaves e valores ')
+for e in brasil:
+      #print(e)
+
+   #for k, v in e.items():
+       #(f'O campo {k} tem o valor de \033[34m{v}\033[m')
+
+   for v in e.values():
+        print(v,end=' ')
+   print()
