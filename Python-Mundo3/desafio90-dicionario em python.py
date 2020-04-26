@@ -15,5 +15,4 @@ while True:
         print(dados)
     else:
         dados['situacao'] = 'Reprovado'
-       #
         print(dados)
