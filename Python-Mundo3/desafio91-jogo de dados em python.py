@@ -19,4 +19,4 @@ ranking = sorted(jogo.items(), key=itemgetter(1), reverse=True)
 #print(ranking)
 print('Valores sorteados')
 for i, v in enumerate(ranking):
-    print(f'{i+1}º lugar: {v[0]} com {v[1]}.')
+    print(f'{i+1}º lugar: {v[0]} com {v[1]} pontos.')
