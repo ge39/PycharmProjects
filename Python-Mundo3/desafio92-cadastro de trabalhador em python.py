@@ -10,6 +10,7 @@ dados['nome'] = str(input('Nome: ').upper())
 nascido=int(input('Nascido em: '))
 dados['idade'] = ano_atual - nascido
 dados['ctps'] = int(input('Carteira Prof [0] nao possui: '))
+
 if dados['ctps'] != 0:
   dados['contrato'] = int(input('Ano Contrato: '))
   dados['salario'] = float(input('Salário: R$ '))
