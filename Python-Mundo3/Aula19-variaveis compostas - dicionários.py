@@ -74,8 +74,19 @@ print(".|\033[34mStar wars|1977|'George Lucas'\033[m|**|'\033[33mAvengers'|2012|
 print('.' * 97)
 print('  titulo     ano    diretor    |  |  titulo    ano     diretor  |  | titulo   ano    diretor')
 print('.' * 100)
-print('         index 0                 |         index 1                |         index 2               |   ')
-
+print('\033[31m               0                 |               1                |            2               |   \033[m')
+print('No exemplo acima, Temos uma estrutura de lista \033[34mchamada locadora'
+      '\033[m com 3 elementos,\033[31m 0, 1, 2\033[m\nDentro do elemento 0 temos: um dicionario, Elemento 1: um dicionario\n'
+      'Elemento 2 outro dicionario\nAs listas são identificadas ou numeros '
+      'e os dicionarios por textos (Chaves literais) e numeros ')
+print()
+print("\033[34mprint(\033[mlocadora\033[32m[0]['ano']\033[m\033[33m)\033[m\n"
+      "Locadora = é o nome da minha estrutura, a lista\n"
+      "\033[32m[0]\033[m = é a referencia externa, é o elemento que identifica o dicionario na lista\n"
+      "\033[32m['ano']\033[m = é a chave do meu dicionario que está no elemento zero")
+print("Exemplificando :\n\033[34mprint(\033[mlocadora\033[32m[0]['ano']\033[m\033[33m)\033[m = 1977")
+print("\033[34mprint(\033[mlocadora\033[32m[2]['titulo']\033[m\033[33m)\033[m = Matrix")
+print()
 print('-=' * 70)
 print('Exercicios na prática')
 print('-=' * 70)
@@ -118,3 +129,51 @@ pessoas = {'nome': 'Gustavo', 'sexo': 'M', 'idade': 40}
 pessoas['nome'] = 'leandro'
 for k, v in pessoas.items():
       print(f'{k} = {v}')
+print()
+print("Adicionando um elemento na lista pessoas, pessoas['peso'] = 98.7")
+pessoas['peso'] = 98.7
+for k, v in pessoas.items():
+      print(f'{k} = {v}')
+      print()
+print('\033[46mCriando um Dicionário dentro de uma lista\033[m')
+print("brasil = [] - Lista\nestado1 = {'uf': 'Rio de Janeiro'} - dicionario\n"
+      "estado2 = {'uf': 'Sao Paulo'} - dicionario")
+
+
+brasil = []
+estado1 = {'uf': 'Rio de Janeiro', 'sigla':'RJ'}
+estado2 = {'uf': 'Sao Paulo','sigla':'SP'}
+brasil.append(estado1)
+brasil.append(estado2)
+print("\033[46mInserindo o dicionario dentro da lista utilizando o metodo append:\033[m\n"
+      "brasil.append(estado1)\nbrasil.append(estado2)")
+print()
+print("\033[46mExibindo o dicionario:\033[m estado1 = {'uf': 'Rio de Janeiro', 'sigla':'RJ'}\n")
+print(f'{brasil} - "print(brasil)"')
+print(brasil[0]['uf'])
+print(brasil[0]['sigla'])
+print()
+print("\033[46mExibindo o dicionario:\033[m estado2 = {'uf': 'Sao Paulo','sigla':'SP'}\n")
+
+print(brasil[1])
+print(brasil[1]['uf'])
+print(brasil[1]['sigla'])
+
+print('\033[46mUtilizando o métoo append em dicionarios\033[m -  brasil.append(estado.copy())')
+estado = dict()
+brasil = list()
+
+for c in range(0, 3):
+      estado['uf'] = str(input('Unidade da Federação :')).upper()
+      estado['sigla'] = str(input('Sigla do estado: ')).upper()
+      brasil.append(estado.copy())
+      print('Utilizando os metodos chaves e valores ')
+for e in brasil:
+      #print(e)
+
+   #for k, v in e.items():
+       #(f'O campo {k} tem o valor de \033[34m{v}\033[m')
+
+   for v in e.values():
+        print(v,end=' ')
+   print()
